@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+header {
+  height: 8vh;
+  background-image: url(images/bg3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header:hover {
+  height: 45vh;
+  background-position: center;
+}
+
+header:hover nav > .brand {
+  opacity: 0;
+  cursor: default;
+  pointer-events: none;
+}
+
+header:hover nav > ul {
+  width: 650px;
+}
+
+header:hover nav > ul > li > a {
+  font-size: 2rem;
+}
+
+header nav {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .brand {
+  margin-left: 4rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+header nav .brand h1 {
+  font-size: 4rem;
+  font-family: "KoHo", sans-serif;
+  color: #00ffb3;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 4vh;
+  margin-right: 2rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header nav ul li a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #00ffb3;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+header nav ul li a:hover {
+  font-style: italic;
+}
+
+header nav ul .shop a {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+header nav ul .shop a:hover {
+  background-color: #00ffb3;
+  color: black;
+}
+
+header .extra {
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+header .extra h1 {
+  color: #00ffb3;
+}
+
+header .extra .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 25vh;
+  margin: 2rem 0 0 1rem;
+}
+
+header .extra .category ul li a {
+  display: block;
+  width: 200px;
+  text-align: center;
+  background-color: #00ffb3;
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+}
+
+header .extra .category ul li a:hover {
+  color: white;
+  background-color: #131313;
+  border-bottom: 2px solid #00ffb3;
+}
+
+.hero {
+  height: 200vh;
+}
+/*# sourceMappingURL=style.css.map */
