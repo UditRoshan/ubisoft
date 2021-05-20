@@ -144,3 +144,164 @@ header{
     }
 }
 
+
+
+.hero {
+    height: 90vh;
+    width: 100vw;
+
+    .showcase {
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+
+            .img {
+                position: relative;
+                border-top: 15px solid rgb(0, 255, 179);
+                border-bottom: 15px solid rgb(0, 255, 179);
+                overflow: hidden;
+
+                .imageDes {
+                    position: absolute;
+                    bottom: -50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    text-align: center;
+                    transition: all 1s ease-in-out;
+                    color: white;
+                    z-index: 2;
+
+                    h2 {
+                        font-size: 4rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 1rem 2rem;
+                        width: 150px;
+                        background-color: rgb(0, 255, 179);
+                        margin-top: 3rem;
+                        font-size: 1.5rem;
+                        font-weight: 700;
+
+                        &:hover {
+                            background-color: white;
+                        }
+                    }
+                }
+
+                &:hover .imageDes {
+                    bottom: 25%;
+                }
+            }
+
+            .img::after {
+                content: '';
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                width: 100%;
+                height: 0%;
+                background-color: rgba(0, 0, 0, 0.698);
+                transition: all 0.5s ease-in-out;
+                z-index: 1;
+            }
+
+            .img:hover::after {
+                height: 100%;
+            }
+
+            .firstImage {
+                width: 300px;
+                height: 650px;
+                background-image: url(images/fc.jpg);
+                background-position: center;
+                background-size: 400%;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-size: 500%;
+                }
+            }
+
+            .secondImage {
+                width: 300px;
+                height: 650px;
+                background-image: url(images/td.jpg);
+                background-position: top;
+                background-size: 420%;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-size: 500%;
+                }
+            }
+
+            .thirdImage {
+                width: 300px;
+                height: 650px;
+                background-image: url(images/rs.jpg);
+                background-position: center;
+                background-size: 420%;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-size: 500%;
+                }
+            }
+
+            .fourthImage {
+                width: 300px;
+                height: 650px;
+                background-image: url(images/fh.jpg);
+                background-position: center;
+                background-size: 420%;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-size: 500%;
+                }
+            }
+
+            .fifthImage {
+                width: 300px;
+                height: 650px;
+                background-image: url(images/ac.jpg);
+                background-position: top;
+                background-size: 420%;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-size: 500%;
+                }
+            }
+
+            .sixthImage {
+                width: 300px;
+                height: 650px;
+                background-image: url(images/tc.jpg);
+                background-position: top;
+                background-size: 420%;
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-size: 500%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.firstSection {
+    height: 100vh;
+}

@@ -155,4 +155,171 @@ header .extra .category ul li a:hover {
   background-color: #131313;
   border-bottom: 2px solid #00ffb3;
 }
+
+.hero {
+  height: 90vh;
+  width: 100vw;
+}
+
+.hero .showcase .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10rem;
+}
+
+.hero .showcase .images .img {
+  position: relative;
+  border-top: 15px solid #00ffb3;
+  border-bottom: 15px solid #00ffb3;
+  overflow: hidden;
+}
+
+.hero .showcase .images .img .imageDes {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  color: white;
+  z-index: 2;
+}
+
+.hero .showcase .images .img .imageDes h2 {
+  font-size: 4rem;
+}
+
+.hero .showcase .images .img .imageDes p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.hero .showcase .images .img .imageDes a {
+  display: block;
+  padding: 1rem 2rem;
+  width: 150px;
+  background-color: #00ffb3;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.hero .showcase .images .img .imageDes a:hover {
+  background-color: white;
+}
+
+.hero .showcase .images .img:hover .imageDes {
+  bottom: 25%;
+}
+
+.hero .showcase .images .img::after {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.698);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.hero .showcase .images .img:hover::after {
+  height: 100%;
+}
+
+.hero .showcase .images .firstImage {
+  width: 300px;
+  height: 650px;
+  background-image: url(images/fc.jpg);
+  background-position: center;
+  background-size: 400%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .showcase .images .firstImage:hover {
+  background-size: 500%;
+}
+
+.hero .showcase .images .secondImage {
+  width: 300px;
+  height: 650px;
+  background-image: url(images/td.jpg);
+  background-position: top;
+  background-size: 420%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .showcase .images .secondImage:hover {
+  background-size: 500%;
+}
+
+.hero .showcase .images .thirdImage {
+  width: 300px;
+  height: 650px;
+  background-image: url(images/rs.jpg);
+  background-position: center;
+  background-size: 420%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .showcase .images .thirdImage:hover {
+  background-size: 500%;
+}
+
+.hero .showcase .images .fourthImage {
+  width: 300px;
+  height: 650px;
+  background-image: url(images/fh.jpg);
+  background-position: center;
+  background-size: 420%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .showcase .images .fourthImage:hover {
+  background-size: 500%;
+}
+
+.hero .showcase .images .fifthImage {
+  width: 300px;
+  height: 650px;
+  background-image: url(images/ac.jpg);
+  background-position: top;
+  background-size: 420%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .showcase .images .fifthImage:hover {
+  background-size: 500%;
+}
+
+.hero .showcase .images .sixthImage {
+  width: 300px;
+  height: 650px;
+  background-image: url(images/tc.jpg);
+  background-position: top;
+  background-size: 420%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .showcase .images .sixthImage:hover {
+  background-size: 500%;
+}
+
+.firstSection {
+  height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */
