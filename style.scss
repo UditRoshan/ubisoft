@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 
 $firstFont:'KoHo', sans-serif;
 $secondFont:'Raleway', sans-serif;
+$thirdFont:'Josefin Sans', sans-serif;
 
 * {
     padding: 0;
@@ -14,6 +16,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     font-family: $secondFont;
+    background-color: black;
 }
 
 a {
@@ -53,7 +56,7 @@ header{
     }
 
     &:hover nav>ul>li>a {
-        font-size: 2rem;
+        font-weight: 800;
     }
 
 
@@ -86,10 +89,9 @@ header{
                     font-size: 1.5rem;
                     font-weight: 500;
                     color: rgb(0, 255, 179);
-                    transition: all 0.6s ease-in-out;
 
                     &:hover {
-                        font-style: italic;
+                        border-bottom: 2px solid rgb(0, 255, 179);
                     }
                 }
             }
@@ -149,17 +151,26 @@ header{
 .hero {
     height: 90vh;
     width: 100vw;
+    background-color: black;
+
+    h1 {
+        font-family: $thirdFont;
+        font-size: 4rem;
+        color: rgb(0, 255, 179);
+        text-align: center;
+        padding-top: 10rem;
+    }
 
     .showcase {
         .images {
             display: flex;
             justify-content: center;
-            margin-top: 10rem;
+            padding-top: 10rem;
 
             .img {
                 position: relative;
-                border-top: 15px solid rgb(0, 255, 179);
-                border-bottom: 15px solid rgb(0, 255, 179);
+                // border-top: 15px solid rgb(0, 255, 179);
+                // border-bottom: 15px solid rgb(0, 255, 179);
                 overflow: hidden;
 
                 .imageDes {
@@ -169,7 +180,7 @@ header{
                     transform: translate(-50%,-50%);
                     text-align: center;
                     transition: all 1s ease-in-out;
-                    color: white;
+                    color: goldenrod;
                     z-index: 2;
 
                     h2 {
@@ -185,13 +196,13 @@ header{
                         display: block;
                         padding: 1rem 2rem;
                         width: 150px;
-                        background-color: rgb(0, 255, 179);
+                        background-color: goldenrod;
                         margin: 3rem auto 0 auto;
                         font-size: 1.5rem;
                         font-weight: 700;
 
                         &:hover {
-                            background-color: white;
+                            background-color: rgb(0, 255, 179);
                         }
                     }
                 }
@@ -303,5 +314,124 @@ header{
 
 
 .firstSection {
-    height: 100vh;
+    height: 80vh;
+    overflow: hidden;
+    border-top: 5px solid rgb(0, 255, 179);
+
+    .bg {
+        height: 100%;
+        background-image: url(images/sectionbg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        position: relative;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            background-size: 130%;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 0%;
+            background-color: rgba(0, 0, 0, 0.603);
+            z-index: 4;
+            transition: all 1s ease-in-out;
+        }
+
+        &:hover::after {
+            height: 100%;
+        }
+
+        &:hover .des {
+            top: 50%;
+        }
+
+        &:hover .invisibleDes {
+            opacity: 0;
+        }
+
+        .invisibleDes {
+            font-family: $thirdFont;
+            font-size: 9rem;
+            color: rgba(0, 255, 179, 0.568);
+            padding-top: 4rem;
+            width: 300px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .des {
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 6;
+            transition: all 1s ease-in-out;
+
+            h1 {
+                font-size: 20rem;
+                font-family: $thirdFont;
+            }
+
+            h2 {
+                font-size: 4rem;
+                line-height: 50px;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                color: goldenrod;
+                line-height: 100px;
+            }
+
+            p {
+                font-size: 2rem;
+                line-height: 30px;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: space-between;
+                width: 800px;
+                margin: auto;
+
+                a {
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    color: white;
+                    display: block;
+                    padding: 2rem 3rem;
+                    background-color: goldenrod;
+                    width: 300px;
+                    margin: 2rem auto;
+    
+                    &:hover {
+                        color: black;
+                        background-color: rgb(0, 255, 179);
+                    }
+                }
+    
+                .secondBtn {
+                    background-color: rgb(0, 119, 255);
+
+                    &:hover {
+                        background-color: crimson;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.secondSection {
+    height: 40vh;
 }
