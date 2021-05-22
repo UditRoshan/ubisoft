@@ -157,7 +157,7 @@ header .extra .category ul li a:hover {
 }
 
 .hero {
-  height: 90vh;
+  height: 130vh;
   width: 100vw;
   background-color: black;
 }
@@ -326,6 +326,66 @@ header .extra .category ul li a:hover {
   background-size: 500%;
 }
 
+.hero .adSection {
+  height: 150px;
+  width: 1800px;
+  margin: 6rem auto;
+  background-image: url(images/bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+
+.hero .adSection::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #272727;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hero .adSection:hover {
+  background-size: 110%;
+}
+
+.hero .adSection:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.hero .adSection:hover .adText {
+  left: 50%;
+}
+
+.hero .adSection .adText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero .adSection .adText h2 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hero .adSection .adText p {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .firstSection {
   height: 80vh;
   overflow: hidden;
@@ -453,6 +513,102 @@ header .extra .category ul li a:hover {
 }
 
 .secondSection {
-  height: 40vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(images/bg10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+
+.secondSection::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(31, 31, 31, 0.74);
+  border-left: 35px solid goldenrod;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.secondSection:hover {
+  background-size: 110%;
+}
+
+.secondSection:hover::after {
+  width: 70%;
+}
+
+.secondSection .sidebar {
+  height: 100vh;
+  width: 100%;
+  padding: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.secondSection .sidebar .leftSide {
+  width: 20%;
+}
+
+.secondSection .sidebar .leftSide ul {
+  height: 87vh;
+  padding: 2rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.253);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+}
+
+.secondSection .sidebar .leftSide ul:hover {
+  cursor: pinter;
+}
+
+.secondSection .sidebar .leftSide ul li {
+  background-color: rgba(29, 29, 29, 0.349);
+  height: 100%;
+  padding: 1rem;
+}
+
+.secondSection .sidebar .leftSide ul li a {
+  display: block;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.secondSection .sidebar .leftSide ul li:hover {
+  -webkit-transform: rotateY(20deg);
+          transform: rotateY(20deg);
+  background-color: rgba(218, 165, 32, 0.3);
+}
+
+.secondSection .sidebar .rightSide {
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */
