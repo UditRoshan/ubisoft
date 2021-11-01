@@ -7,11 +7,16 @@
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
   background-color: black;
+  overflow-x: none;
 }
 
 a {
